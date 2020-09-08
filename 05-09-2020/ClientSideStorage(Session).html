@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <script>
+           
+            
+                if(typeof(Storage)!==undefined)
+                {
+                    sessionStorage.setItem("click","0");}
+                    else  document.getElementById("show").innerHTML="Browser not supported";
+                  
+                
+
+                
+                function clickcounter(){
+                    var con =sessionStorage.getItem("click");
+                    con++;
+                    sessionStorage.setItem("click",con);
+                    document.getElementById("show").innerHTML= sessionStorage.getItem("click");
+                    
+                  }
+                
+        </script>
+
+    </Head>
+    <body>
+        <button onclick="clickcounter()" type="button" >Click Me</button> 
+            <p id="show"></p>
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+            <p id="data"></p>
+            <script>
+                if(typeof(Storage)!==undefined)
+                {
+                    localStorage.setItem("god","Messi");
+                    document.getElementById("data").innerHTML=localStorage.getItem("god");
+                }
+                else
+                {
+                    document.getElementById("data").innerHTML="Browser not supported";
+                }
+            </script>
+
+    </body>
+</html>

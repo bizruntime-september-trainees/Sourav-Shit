@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        body {
+            background-image: url('20160626_095627.jpg');
+            background-size: cover;
+        }
+    </style>
+    
+        <style>
+            .heading {
+                color: brown;
+                text-align: center;
+            }
+
+            .fromp {
+                position: relative;
+                left: 75px;
+            }
+        </style>
+        <div class="heading">
+            <h1>My Photography</h1>
+        </div>
+
+        <div class="fromp">
+            <h2 style="color:orangered" ;>Enter Your Details</h2>
+
+            <form id="myfrom">
+                First Name :<input type="text" id="cfname" placeholder="Enter your first name" /><br />
+                Last Name :<input type="text" id="clname" placeholder="Enter your last Name" /><br /><br />
+                Age:<input type="text" id="age" placeholder="Enter your age" /><br /><br />
+                <input type="button" onclick="fn()" value="Submit" />
+            </form>
+        </div>
+        <script>
+            function fn() {
+                val cfname = document.forms["myfrom"]["cfname"].value;
+                val clname = document.forms["myfrom"]["clname"].value;
+                val age = document.forms["myfrom"]["age"].value;
+                if (cfname == "" && clname == "" && age == "") { alert("name can not be null"); }
+            }
+        </script>
+
+
+    </body>
+</html>

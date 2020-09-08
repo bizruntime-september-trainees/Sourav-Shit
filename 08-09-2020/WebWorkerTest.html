@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+        <body>
+            <script>
+                if
+                    (typeof(Worker)!=="undefined")
+                    {
+                        if(typeof(w)=="undefined")
+                        {
+                            var myWorker= new Worker("Worker.js");
+                            var message= {add: {
+                                num1:22,num2:12}};
+                                myWorker.postMessage(message)
+                                myWorker.onmessage=function(e)
+                                {
+                                   console.dir(e.data.result);
+                                    document.getElementById("add").innerHTML=e.data.result;
+                                  
+                                }
+
+
+                            }
+
+                        }
+                </script>
+            <h3 id="add"></h3>
+
+        </body>
+</html>

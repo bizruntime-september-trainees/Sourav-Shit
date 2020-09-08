@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo"></p>
+
+<script>
+
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+ 
+}
+
+
+var me = new Person("Sourav", "Shit", 23);
+
+
+document.getElementById("demo").innerHTML =
+"I am "+ me.firstName +" "+me.lastName+" and my age is " + me.age + "."; 
+</script>
+
+</body>
+</html>

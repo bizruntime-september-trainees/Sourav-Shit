@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var wr;
+            function fun()
+            {
+            if(typeof(Worker)!=="undefined")
+            {
+                if(typeof(w)=="undefined")
+                {
+                     wr=new Worker("worker1.js")
+
+                   wr.onmessage=function(e)
+                   {
+                       document.getElementById("show").innerHTML=e.data;
+                   }
+                }
+            }
+        }
+        function stp()
+        {
+            wr.terminate();
+            wr=undefined;
+        }
+        </script>
+        <p>Count numbers: <output id="show"></output></p>
+        <button type="button" onclick="fun()">Start</button>
+        <button type="button" onclick="stp()">Stop</button>
+        
+    </body>
+</html>

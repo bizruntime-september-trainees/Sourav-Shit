@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function Shape()
+            {
+                this.name="none";
+                throw new console.error("Can't create an instance");
+                
+            }
+            Shape.prototype.drow= function()
+            {
+                return "Drawing "+this.name;
+            }
+          var Circle= function(name)
+          {
+              this.name=name;
+          }
+          Circle.prototype=Object.create(Shape.prototype);
+          var cir=new Circle("Circle");
+          document.writeln(cir.drow());
+
+           
+
+        </script>
+    </body>
+</html>

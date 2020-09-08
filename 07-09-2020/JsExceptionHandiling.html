@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Enter a number between 20 to 100</p>
+        <input id="in" type="text">
+        <button type="button" onclick="myFun()">Ok</button>
+        <p id="error"></p>
+        <script>
+            function myFun()
+            {
+                var message,p;
+                p= document.getElementById("error");
+                p.innerHTML="";
+                message=document.getElementById("in").value;
+                try {
+                    if(message=="") throw "emty";
+                    if(isNaN(message)) throw "not a number";
+                    message=Number(message);
+                    if(message<20) throw "too small";
+                    if(message>100) throw "too learge";
+                } catch (err) {
+                    p= document.getElementById("error");
+                    p.innerHTML="Input is "+err;
+
+                    
+                }
+            }
+        </script>
+    </body>
+</html>
