@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Css Layout</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+
+        }
+
+        .header {
+            background-color: rgb(46, 2, 54);
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding: 30px;
+            
+        }
+
+        .nav {
+            background-color: rgb(44, 42, 32);
+            overflow: hidden;
+
+        }
+
+        .nav a {
+           
+           
+            float: left;
+            display: block;
+            color: oldlace;
+            padding: 12px 28px 12px 28px;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            color: rgb(15, 177, 15);
+            background-color: rgb(10, 66, 119);
+
+        }
+
+        .row:after {
+
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+            background-color: rgb(238, 136, 175);
+            margin: 12px;
+            padding: 10px;
+
+
+        }
+
+
+        .column1 {
+            float: left;
+            width: 30%;
+            background-color: rgb(147, 224, 195);
+            margin: 12px;
+            padding: 10px;
+
+        }
+
+        .column2 {
+            float: left;
+            width: 30%;
+            background-color: rgb(171, 161, 235);
+            margin: 12px;
+            padding: 10px;
+
+
+        }
+
+
+        .column h3 {
+            text-align: center;
+        }
+
+
+
+
+
+        .footer {
+
+            background-color: #abeedd;
+            text-align: center;
+            padding: 1px;
+            margin-top: 20px;
+
+        }
+    </style>
+    <div class="header">
+        <h1 style="color:rgb(247, 10, 10);"><i >My Website</i</h1>
+    </div>
+    <div class="nav">
+        <a href="#"><p style="font-size: 35px;">C<p></a>
+        <a href="#">Java</a>
+        <a href="#">Html</a>
+        <a href="#">Css</a>
+        <a href="#">Javascript</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas sit amet pretium
+                urna. Vivamus venenatis velit nec neque
+                ultricies, eget elementum magna tristique.
+                Quisque vehicula, risus eget aliquam
+                placerat, purus leo tincidunt eros, eget
+                luctus quam orci in velit. Praesent
+                scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column1">
+            <h3>Objective</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas sit amet pretium
+                urna. Vivamus venenatis velit nec neque
+                ultricies, eget elementum magna tristique.
+                Quisque vehicula, risus eget aliquam
+                placerat, purus leo tincidunt eros, eget
+                luctus quam orci in velit. Praesent
+                scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column2">
+            <h3>Vision</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas sit amet pretium
+                urna. Vivamus venenatis velit nec neque
+                ultricies, eget elementum magna tristique.
+                Quisque vehicula, risus eget aliquam
+                placerat, purus leo tincidunt eros, eget
+                luctus quam orci in velit. Praesent
+                scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+    <div>
+        <img src="computer-science.jpg"" alt=" sky" height="500" width="100%">
+    </div>
+    <div class="footer">
+        <p>Contect Detailse</p>
+    </div>
+</body>
+
+</html>
