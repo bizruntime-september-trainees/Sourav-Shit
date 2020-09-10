@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+    </Head>
+    <body>
+        <script>
+            var ws = new WebSocket("ws://localhost:8080");
+           
+            ws.onopen=function()
+            {
+                // var message = {
+                //     add: {
+                //         num1: 22, num2: 33
+                //     }
+                // };
+                ws.send(20);
+                
+            }
+            ws.onmessage=function(e)
+            {
+                console.log(e.data);
+               // var message=e.data.rasult;
+            } 
+         
+
+            
+           // document.getElementById("show").innerHTML=message1;
+        </script>
+   
+      <h2 id="show"></h2>
+    </body>
+</html>
