@@ -1,0 +1,23 @@
+[
+    {
+        "name": "John",
+        "age": 31,
+        "city": "New York"
+    },
+    {
+        "name":"sourav",
+        "age": 23,
+        "city":"bankura"
+
+    },
+    {
+        "name":"syan",
+        "age": 24,
+        "city":"kolkata"
+    },
+    {
+    "name":"Suman",
+    "age": 23,
+    "city":"bankura"
+    }
+]
