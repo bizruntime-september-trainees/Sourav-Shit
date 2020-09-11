@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+    </Head>
+    <body>
+        <script>
+            var ws = new WebSocket("ws://localhost:8082");
+            ws.addEventListener("open" ,()=>{
+                console.log("connection created");
+                ws.send("hello i am sourav");
+
+            });
+            ws.addEventListener("message",(e)=>{
+                //var message1=(e.data);
+                console.log(e.data)
+            });
+          // document.getElementById("show").innerHTML=message1;
+        </script>
+   
+      <h2 id="show"></h2>
+    </body>
+</html>
