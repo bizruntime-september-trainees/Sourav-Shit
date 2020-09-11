@@ -1,0 +1,15 @@
+$bColor :  rgb(126, 20, 35);
+$tcolor : rgb(23, 94, 88);
+
+header
+{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+header button
+{
+    background: $hbColor;
+}
+

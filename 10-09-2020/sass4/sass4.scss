@@ -1,0 +1,28 @@
+@mixin setp($color,$position) {
+    text-align: $position;
+    background-color: $color;
+    
+} 
+@mixin setsz($hight,$width) {
+    height: $hight;
+    width: $width;
+    
+}
+body{
+    background-color: black;
+}
+header
+{
+    @include setp(rgb(115, 115, 168),center);
+    @include setsz(300px,100% );
+
+
+}
+.hed 
+{
+   margin: 0;
+     @include setp(rgb(131, 33, 33),center);
+     @include setsz(500px,100%);
+        
+    }
+

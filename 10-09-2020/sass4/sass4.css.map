@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,IAAI,AAAA,CACA,gBAAgB,CAAE,KAAK,CAC1B,AACD,AAAA,MAAM,AACN,CAbI,UAAU,CAcuB,MAAM,CAbvC,gBAAgB,CAaF,OAAkB,CAThC,MAAM,CAUS,KAAK,CATpB,KAAK,CASgB,IAAI,CAG5B,AACD,AAAA,IAAI,AACJ,CACG,MAAM,CAAE,CAAC,CArBR,UAAU,CAsBsB,MAAM,CArBtC,gBAAgB,CAqBD,OAAgB,CAjB/B,MAAM,CAkBU,KAAK,CAjBrB,KAAK,CAiBiB,IAAI,CAEzB",
+    "sources": [
+        "sass4.scss"
+    ],
+    "names": [],
+    "file": "sass4.css"
+}
+}

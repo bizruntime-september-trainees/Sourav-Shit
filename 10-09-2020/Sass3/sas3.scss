@@ -1,0 +1,18 @@
+$hcolor : rgb(6, 77, 6);
+$bcolor : rgb(73, 156, 177);
+$pfont : bold;
+
+@import "./header";
+body
+{
+    background-color: rgb(213, 174, 223);
+}
+.btn
+{
+    float: right;
+}
+@import "./button";
+.btn p
+{
+        font-weight: $pfont;
+}

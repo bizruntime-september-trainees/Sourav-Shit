@@ -1,0 +1,37 @@
+$hcolor : rgb(6, 77, 6);
+$bcolor : rgb(73, 156, 177);
+$pfont : bold;
+header{
+    
+    text-align: center;
+    color: $hcolor;
+    background-color: gray;
+    padding: 2px 1px;
+}
+body
+{
+    background-color: rgb(213, 174, 223);
+}
+.btn
+{
+    float: right;
+}
+.btn button 
+{
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 40px;
+    width:75px;
+    background: $bcolor;
+}
+.btn p
+{
+        font-weight: $pfont;
+}
+button{
+    height: 40px;
+    width: 75px;
+    margin-top:10px;
+    margin-left: 30px;
+    background: $bcolor;
+}
