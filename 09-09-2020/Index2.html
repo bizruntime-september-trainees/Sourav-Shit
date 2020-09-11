@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>AJAX</h2>
+
+<p id="demo">It will Change.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.onload=function(){
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+  }
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

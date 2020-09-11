@@ -1,0 +1,1 @@
+This is changed by AJAX, with out refresing the page.
