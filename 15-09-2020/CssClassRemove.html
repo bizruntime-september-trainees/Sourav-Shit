@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button1").click(function(){
+            $("h1").removeClass("red");
+        });
+        $("#button2").click(function(){
+            $("h1").toggleClass("red");
+        });
+    });
+</script>
+<style>
+    .red
+    {
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <h1 class="red">This is a Red Heading</h1>
+    <button id="button1" style="margin-left: 40px;">Click to remove</button>
+    <button id="button2">Click to toggle</button>
+</body>
+</html>

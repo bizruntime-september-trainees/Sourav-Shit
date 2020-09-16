@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
+});
+</script>
+<style>
+    .class * { 
+      display: block;
+      border: 3px solid rgb(22, 238, 2);
+      color: rgb(17, 190, 233);
+      padding: 8px;
+      margin: 10px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="class">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div><br>
+
+  <div style="width:500px;">div (grandparent)   
+    <p>p (direct parent)
+      <span>span</span>
+    </p> 
+  </div>
+</div>
+
+</body>
+</html>

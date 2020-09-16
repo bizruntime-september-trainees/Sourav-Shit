@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").addClass("green");
+    $("div").addClass("important");
+  });
+});
+</script>
+<style>
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.green {
+  color: rgb(208, 243, 208);
+}
+</style>
+</head>
+<body>
+
+<h1>Hello</h1>
+
+
+<p>Sourav</p>
+<p>Hello World.</p>
+
+<div>Important text!</div><br>
+
+<button>Add classes to elements</button>
+
+</body>
+</html>
