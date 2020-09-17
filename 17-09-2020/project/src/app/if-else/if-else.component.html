@@ -1,0 +1,16 @@
+<h1>If-Else</h1>
+
+<h3 *ngIf="val else elseblock">
+    in if block
+</h3>
+<ng-template #elseblock>
+    <h3>Else block</h3>
+</ng-template><br>
+<h1>Switch Case</h1>
+<div [ngSwitch]="number">
+    <h3 *ngSwitchCase = "'1'">it is 1</h3>
+    <h3 *ngSwitchCase = "'2'">it is 2</h3>
+    <h3 *ngSwitchCase = "'3'">it is 3</h3>
+    <h3 *ngSwitchCase = "'4'">it is 4</h3>
+    <h3 *ngSwitchDedault>it is Default</h3>
+</div>
