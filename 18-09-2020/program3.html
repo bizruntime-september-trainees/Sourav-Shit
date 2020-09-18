@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <Script>
+        var arr=[8,29,49];
+        var canvas=d3.select("body")
+        .append("svg")
+        .attr("height",800)
+        .attr("width",700);
+
+        var bar=canvas.selectAll("rect")
+        .data(arr)
+        .enter()
+        .append("rect")
+        .attr("width",function(d) {return d*9;})
+        .attr("height",30)
+        .attr("y",function(d,i) {return i*50;})
+        .attr("fill","red");
+    </Script>
+</body>
+</html>

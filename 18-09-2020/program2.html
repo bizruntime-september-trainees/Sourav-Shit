@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <script>
+        var canvas=d3.select("body")
+        .append("svg")
+        .attr("height",500)
+        .attr("width",500);
+
+        var circle=canvas.append("circle")
+                    .attr("cx",200)
+                    .attr("cy",200)
+                    .attr("r",50)
+                    .attr("fill","green");
+        
+        var ract=canvas.append("rect")
+                        .attr("x",150)
+                        .attr("height",140)
+                        .attr("width",100)
+                        .attr("fill","blue");
+        var line=canvas.append("line")
+                    .attr("x1",30)
+                    .attr("y1",270)
+                    .attr("x2",370)
+                    .attr("y2",270)
+                    .attr("stroke","red")
+                    .attr("stroke-width",5)                
+    </script>
+    
+</body>
+</html>
