@@ -1,0 +1,27 @@
+<h1>TrackBy Loop</h1>
+<table border="2px solid">
+  <tr >
+    <td>index</td>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Gender</td>
+  </tr>
+  <tr *ngFor="let s of students; let i=index; TrackBy:tarckByStudentid" >
+    <td>{{i+1}}</td>
+    <td>{{s.studentid}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.age}}</td>
+    <td>{{s.gender}}</td>
+
+  </tr>
+</table>
+<br>
+<button (click)="addStudent();" >Add new value</button><br>
+<h1></h1>
+<ul *ngFor="let per of people">
+  <li [ngStyle]="{'color':getColor(per.contry)}">
+
+      {{per.name}}-({{per.contry}})
+  </li>
+</ul>
