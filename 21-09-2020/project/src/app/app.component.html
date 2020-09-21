@@ -1,0 +1,14 @@
+<h1>Pipes</h1>
+<h3>using pipes we convarted name to uppercase</h3>
+<h2>name of he student is- {{student | uppercase}}</h2>
+
+<h1>
+ Use of ngClass
+</h1>
+<h3 [ngClass]="'red font'">Hello,The color and font size changed by ngclass</h3>
+<h1>Event Binding</h1>
+  
+<input #box
+      (keyup.enter)="update(box.value)"
+      (blur)="update(box.value)">
+    <p>The value is- {{value}}</p>
