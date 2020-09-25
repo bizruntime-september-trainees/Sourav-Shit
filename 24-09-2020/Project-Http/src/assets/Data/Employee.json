@@ -1,0 +1,15 @@
+[{
+  "name":"Bapan",
+  "age":23,
+  "city":"bankura"
+},
+{
+  "name":"Indra",
+  "age":25,
+  "city":"bangalore"
+},
+{
+  "name":"Subham",
+  "age":24,
+  "city":"Kolkata"
+}]
