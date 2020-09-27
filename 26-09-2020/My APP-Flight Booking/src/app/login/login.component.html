@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title> LogIn </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header> Enter Login Details </ion-card-header>
+          <ion-item>
+            <ion-label position="floating">User Name</ion-label>
+            <ion-input #name type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input #pass type="password"></ion-input>
+          </ion-item>
+          <div style="margin-left: 25%; margin-top: 15px; margin-bottom: 15px;">
+            <ion-button routerLink="/reg" fill="outline" color="success">
+              Register</ion-button
+            >
+            <ion-button
+              (click)="logBtn(name.value,pass.value)"
+              fill="outline"
+              color="primary"
+            >
+              <ion-icon name="return-down-forward-outline"></ion-icon
+              >Login</ion-button
+            >
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

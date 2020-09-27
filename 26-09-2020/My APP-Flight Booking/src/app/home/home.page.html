@@ -1,0 +1,71 @@
+<ion-app><ion-router-outlet></ion-router-outlet></ion-app>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title > 
+      Book Your Flight
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-card>
+<ion-card-header><b>Search Flights:</b></ion-card-header>
+<ion-card-content>
+  <form (ngSubmit)="logForm()">
+
+    <!-- <li>
+      <span>{{citys.city1}} to {{citys.city2}}</span>
+      </li>  -->
+
+    <ion-item>
+      <!--ion-label position="floating">From</ion-label-->
+      <ion-input type="text" required  [(ngModel)]="citys.city1" name="t1" placeholder="Source City"></ion-input>
+    </ion-item>
+    <ion-item>
+      <!--ion-label position="floating">To</ion-label-->
+      <ion-input type="text" [(ngModel)]="citys.city2" name="t2" placeholder="Destination City" ></ion-input>
+    </ion-item>
+    <ion-button style="margin-left: 65%; margin-top: 15px;" type="submit" fill="outline" color="Scarch">Scarch</ion-button>
+  </form>
+</ion-card-content>
+</ion-card>
+<ion-card *ngIf="resultItinerarys.length >0 ; else noFlights">
+  <ion-card-header><b style="color: green;"> Available Flights:</b></ion-card-header>
+  <ion-card-content>   
+
+      <ion-grid style="border-bottom:groove">
+        <ion-row style="border-bottom: groove;">
+          <ion-col> Sl No. </ion-col>
+          <ion-col> Source City </ion-col>
+          <ion-col> Destination City </ion-col>
+          <ion-col> Date </ion-col>
+          <ion-col> Time </ion-col>
+          <ion-col>  </ion-col>
+        </ion-row>
+         
+
+          <ion-row *ngFor="let itinerary of resultItinerarys; index as i" style="border-bottom: groove;">
+            <ion-col> {{i+1}}</ion-col>
+            <ion-col> {{itinerary.city1}} </ion-col>
+            <ion-col> {{itinerary.city2}} </ion-col>
+            <ion-col> {{itinerary.date}} </ion-col>
+            <ion-col> {{itinerary.time}} </ion-col>
+            <ion-col> <ion-button routerLink="/login"  fill="outline" color="success">Book</ion-button> </ion-col>
+          </ion-row>
+      </ion-grid>
+      <!-- <div *ngIf="loginValue" >
+        
+        <p routerLink='/bookingForm'></p>
+      </div> -->
+      
+     
+   <!-- {{resultItinerarys | json}} -->
+
+
+  </ion-card-content>
+</ion-card>
+<ng-template #noFlights>
+  <ion-card *ngIf="flagNoFlightResult"><b style="color:red;">*** No Flights Available ***</b></ion-card>
+</ng-template>
+
+
+</ion-content>
