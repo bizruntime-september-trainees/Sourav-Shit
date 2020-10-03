@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<json-schema-form [schema]="arrayExample.schema" [form]="arrayExample.layout" (onChanges)="onChangeArray($event)" [options]="arrayFormOptions" (isValid)="onIsValid($event)"></json-schema-form>
+
+<hr>
+
+<json-schema-form [schema]="loginSchema" [data]="loginData" (onSubmit)="onLogin($event)" [layout]="loginLayout" [options]="loginOptions"
+ (validationErrors)="onError($event)"></json-schema-form>
